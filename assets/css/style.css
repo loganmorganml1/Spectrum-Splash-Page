@@ -150,7 +150,7 @@ form button {
 
 /*tablet design*/
 
-@media (min-width: 768px) {
+@media (min-width: 834px) {
   h1 {
     font-size: 55px;
   }
@@ -182,12 +182,8 @@ form button {
   margin: 0 12px;
 }
 .weather-apps-section {
-    justify-content: flex-start;
-    border: solid;
-    border-width: 3px;
-    border-color: rgb(14, 93, 168);
-  padding: 0 30px;
-  margin:0 12px 25px 12px;
+  padding: 0;
+  margin:20px;
 
 }
 
@@ -198,6 +194,21 @@ form button {
 .logo-icon {
   height: 50px;
   margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.border-text{
+ border: solid;
+    border-width: 3px;
+    border-color: rgb(14, 93, 168);
+    height: 100%;
+    padding: 20px 10px;
+
+}
+
+.border-text li{
+    padding: 0 10px;
+    margin-left: 20px;
 }
 
 #weather-widget {
