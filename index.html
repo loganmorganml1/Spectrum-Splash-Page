@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="storm-leads-section">
@@ -20,8 +20,8 @@
             <h1>STORM LEADS GO DIGITAL</h1>
         </div>
         <div id="storm-leads-copy">
-            <p>Ever wonder how you could capture storm leads without canvassing? Now with our new partner Spectrum, you can do just that and more!<br><br>
-                With Spectrum’s Predictive Sales AI and Extreme Weather technology, you can add additional engagement and appointment setting technology to your website with the click of a button. Whether your future customers are interacting with your site to view past weather events that hit their home, or you want to investigate the potential storm leads in your service area, our tools will help you to take hold of storm’s digital potential today.</p>
+            <p style="font-weight: 500;">Ever wonder how you could capture storm leads without canvassing? Now with our new partner Spectrum, you can do just that and more!</p>
+            <p>With Spectrum’s Predictive Sales AI and Extreme Weather technology, you can add additional engagement and appointment setting technology to your website with the click of a button. Whether your future customers are interacting with your site to view past weather events that hit their home, or you want to investigate the potential storm leads in your service area, our tools will help you to take hold of storm’s digital potential today.</p>
         </div>
     </div>
     <div id="weather-apps">
@@ -56,10 +56,14 @@
         <form>
             <title>GET A QUOTE</title>
             <h2>GET A QUOTE</h2>
-            <i src="/assets/img/email-icon.svg"></i>
+            <div class="quote-field">
+            <i><img src="/assets/img/email-icon.svg" alt="email icon" class="form-icon"></i>
             <input type="text" id="email" placeholder="Email" required>
-            <i src="/assets/img/phone-icon.png"></i>
+            </div>
+            <div class="quote-field">
+            <i><img src="/assets/img/phone-icon.png" alt="phone icon" class="form-icon"></i>
             <input type="text" id="phone" placeholder="Phone">
+            </div>
             <button onclick="SendMail()" type="submit">SUBMIT</button>
         </form>
     </div>

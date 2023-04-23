@@ -7,6 +7,14 @@ html {
     overflow: hidden;
     height: 100%;
 }
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  margin: 0;
+}
+
 h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -27,12 +35,9 @@ p {
     font-weight: 400;
 }
 
-body {
-  height: 100%;
-  min-height: 100vh;
-  overflow: auto;
-  overscroll-behavior-y: none;
-  margin: 0;
+li{
+    margin: 10px 0;
+    line-height: 130%;
 }
 
 /*storm leads section*/
@@ -74,13 +79,21 @@ body {
     justify-content: center;
     padding: 25px 30px;
 }
+
+.weather-apps-section h2{
+    margin-top: 10px;
+}
 .logo-icon{
     height: 50px;
+    margin-top: 25px;
 }
 
 #weather-widget{
     background-color: #EAEAEA;
 }
+
+
+/*quote section*/
 
 #form-section{
     background-color:rgb(14,93,168);
@@ -88,16 +101,23 @@ body {
 
 #form-section h2{
     color:white;
+    margin-bottom: 20px;
 }
 
 form input{
     border: none;
     font-family: 'Roboto', sans-serif;
     margin: 10px;
-    width: 75%;
+    width: 250px;
     font-style: italic;
     font-weight: 400;
     padding: 5px;
+}
+
+.quote-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 form{
@@ -105,7 +125,6 @@ form{
     flex-direction: column;
      align-items: center;
     justify-content: center;
-    margin: 0 25px;
     padding: 25px 0;
 }
 
@@ -122,4 +141,8 @@ form button{
   margin: 20px 0;
   cursor: pointer;
   border-radius: 2px;
+}
+
+.form-icon{
+    width: 30px;
 }
