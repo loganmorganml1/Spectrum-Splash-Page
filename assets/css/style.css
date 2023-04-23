@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+    overflow: hidden;
+    height: 100%;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color:white;
+}
+
+h2{
+     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+p {
+   font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  overscroll-behavior-y: none;
+  margin: 0;
+}
+
+/*storm leads section*/
+.storm-leads-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    background-image: url(/assets/img/roof-damage.jpg);
+    height: 175px;
+    background-size: cover;
+    box-shadow: inset 0 0 200px 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#predictive-sales-ai-logo{
+    width: 100px;
+    margin-bottom: 15px;
+}
+#storm-leads-copy{
+    margin: 25px;
+}
