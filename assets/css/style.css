@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 html {
-    overflow: hidden;
-    height: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
@@ -15,126 +15,127 @@ body {
   margin: 0;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    color:white;
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  color: white;
 }
 
-h2{
-     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    text-align: center;
-    padding: 0 60px;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  padding: 0 60px;
 }
 
 p {
-   font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
-li{
-    margin: 10px 0;
-    line-height: 130%;
+li {
+  margin: 10px 0;
+  line-height: 130%;
 }
 
 /*storm leads section*/
-.storm-leads-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.storm-leads-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero{
-    background-image: url(/assets/img/roof-damage.jpg);
-    height: 175px;
-    background-size: cover;
-    box-shadow: inset 0 0 200px 10px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.hero {
+  background-image: url(/assets/img/roof-damage.jpg);
+  height: 175px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 200px 10px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-#predictive-sales-ai-logo{
-    width: 100px;
-    margin-bottom: 15px;
+#predictive-sales-ai-logo {
+  width: 100px;
+  margin-bottom: 15px;
 }
-#storm-leads-copy{
-    margin: 25px;
+#storm-leads-copy {
+  margin: 25px;
 }
 
 /*weather widget and weather alerts section*/
 
-#weather-apps{
-    display: flex;
-    flex-direction: column;
+#weather-apps {
+  display: flex;
+  flex-direction: column;
 }
-.weather-apps-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 30px;
-}
-
-.weather-apps-section h2{
-    margin-top: 10px;
-}
-.logo-icon{
-    height: 50px;
-    margin-top: 25px;
+.weather-apps-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 30px;
 }
 
-#weather-widget{
-    background-color: #EAEAEA;
+.weather-apps-section h2 {
+  margin-top: 10px;
+}
+.logo-icon {
+  height: 50px;
+  margin-top: 25px;
 }
 
+#weather-widget {
+  background-color: #eaeaea;
+}
 
 /*quote section*/
 
-#form-section{
-    background-color:rgb(14,93,168);
+#form-section {
+  background-color: rgb(14, 93, 168);
 }
 
-#form-section h2{
-    color:white;
-    margin-bottom: 20px;
+#form-section h2 {
+  color: white;
+  margin-bottom: 20px;
 }
 
-form input{
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-    width: 250px;
-    font-style: italic;
-    font-weight: 400;
-    padding: 5px;
+form input {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  width: 250px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 5px;
 }
 
-.quote-field{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.quote-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-form{
-    display:flex;
-    flex-direction: column;
-     align-items: center;
-    justify-content: center;
-    padding: 25px 0;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
 }
 
-form button{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: white;
-    background-color: rgb(36,167,74);
-    border: solid;
-    border-color: white;
+form button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(36, 167, 74);
+  border: solid;
+  border-color: white;
   padding: 8px 30px;
   text-align: center;
   display: inline-block;
@@ -143,6 +144,64 @@ form button{
   border-radius: 2px;
 }
 
-.form-icon{
-    width: 30px;
+.form-icon {
+  width: 30px;
+}
+
+/*tablet design*/
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+
+/*storm leads section*/
+
+.hero {
+  height: 220px;
+  align-items:flex-start;
+  padding-left: 40px;
+}
+#predictive-sales-ai-logo {
+  width: 150px;
+}
+#storm-leads-copy {
+  margin: 25px;
+}
+
+/*weather widget and weather alerts section*/
+
+#weather-apps {
+  flex-direction: row;
+  margin: 0 12px;
+}
+.weather-apps-section {
+    justify-content: flex-start;
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(14, 93, 168);
+  padding: 0 30px;
+  margin:0 12px 25px 12px;
+
+}
+
+.weather-apps-section h2 {
+  margin-top: 0;
+  margin: 0 20px;
+}
+.logo-icon {
+  height: 50px;
+  margin-top: 0;
+}
+
+#weather-widget {
+  background-color: transparent;
+}
+
 }
