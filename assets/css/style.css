@@ -102,7 +102,7 @@ li {
 
 #form-section h2 {
   color: white;
-  margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 form input {
@@ -126,7 +126,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px 0;
 }
 
 form button {
@@ -179,7 +178,7 @@ form button {
 
 #weather-apps {
   flex-direction: row;
-  margin: 0 12px;
+  margin: 0 12px 25px 12px;
 }
 .weather-apps-section {
   padding: 0;
@@ -192,7 +191,7 @@ form button {
   margin: 0 20px;
 }
 .logo-icon {
-  height: 50px;
+  height: 55px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -213,6 +212,45 @@ form button {
 
 #weather-widget {
   background-color: transparent;
+}
+
+/*quote section*/
+
+form input {
+  margin: 10px;
+  width: 250px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.quote-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form {
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+form button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(36, 167, 74);
+  border: solid;
+  border-color: white;
+  padding: 8px 30px;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.form-icon {
+  width: 35px;
 }
 
 }
