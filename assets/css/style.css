@@ -308,4 +308,38 @@ form {
 #weather-widget {
   background-color: transparent;
 }
+
+/*quote section*/
+
+#form-section{
+    position:fixed;
+    z-index:1;
+    left: 30%;
+    top: 25%;
+    padding: 5% 6%;
+    box-shadow: 10px 10px 1000px 1000px rgba(0, 0, 0, 0.75);
+}
+
+form input {
+  width: 500px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.quote-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+  padding-bottom: 0;
+  width: 500px;
+}
+
+.form-icon {
+  width: 35px;
+}
 }
