@@ -53,12 +53,13 @@ li {
   width: 100%;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 200px 10px #000;
+  box-shadow: inset 0 0 200px 30px #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-shadow: 0px 0px 5px #323232;
 }
 #predictive-sales-ai-logo {
   width: 100px;
@@ -183,7 +184,6 @@ form button {
 .weather-apps-section {
   padding: 0;
   margin:20px;
-
 }
 
 .weather-apps-section h2 {
@@ -234,23 +234,78 @@ form {
   padding-bottom: 25px;
 }
 
-form button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: white;
-  background-color: rgb(36, 167, 74);
-  border: solid;
-  border-color: white;
-  padding: 8px 30px;
-  text-align: center;
-  display: inline-block;
-  margin: 20px 0;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
 .form-icon {
   width: 35px;
 }
 
+}
+
+@media (min-width: 1400px) {
+      h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 45px;
+    padding: 0;
+  }
+  p {
+    font-size: 20px;
+  }
+  li {
+    font-size: 20px;
+  }
+
+  /*storm leads section*/
+
+.hero {
+  height: 300px;
+  padding-left: 10%;
+}
+#predictive-sales-ai-logo {
+  width: 200px;
+}
+#storm-leads-copy {
+  margin: 25px 10%;
+}
+
+/*weather widget and weather alerts section*/
+
+#weather-apps {
+  margin: 25px 10%;
+}
+.weather-apps-section {
+  margin:0;
+}
+
+#weather-alerts {
+    margin-left:5%;
+}
+
+.weather-apps-section h2 {
+  margin-top: 0;
+}
+.logo-icon {
+  height: 55px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.border-text{
+ border: solid;
+    border-width: 3px;
+    border-color: rgb(14, 93, 168);
+    height: 100%;
+    padding: 20px 10px;
+
+}
+
+.border-text li{
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+#weather-widget {
+  background-color: transparent;
+}
 }
