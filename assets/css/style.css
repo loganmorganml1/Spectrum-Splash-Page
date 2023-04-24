@@ -20,6 +20,7 @@ h1 {
   font-weight: 900;
   font-size: 35px;
   color: white;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
   font-size: 25px;
   text-align: center;
   padding: 0 60px;
+  text-transform: uppercase;
 }
 
 p {
@@ -97,11 +99,11 @@ li {
 
 /*quote section*/
 
-#form-section {
+.form-section {
   background-color: rgb(14, 93, 168);
 }
 
-#form-section h2 {
+.form-section h2 {
   color: white;
   padding-top: 50px;
 }
@@ -148,9 +150,13 @@ form button {
   width: 30px;
 }
 
- #modal-button{
-    display:none;
- }
+#modal-button {
+  display: none;
+}
+
+#x {
+  display: none;
+}
 
 /*tablet design*/
 
@@ -164,88 +170,86 @@ form button {
     padding: 0;
   }
 
+  /*storm leads section*/
 
-/*storm leads section*/
+  .hero {
+    height: 220px;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  #predictive-sales-ai-logo {
+    width: 150px;
+  }
+  #storm-leads-copy {
+    margin: 25px;
+  }
 
-.hero {
-  height: 220px;
-  align-items:flex-start;
-  padding-left: 40px;
-}
-#predictive-sales-ai-logo {
-  width: 150px;
-}
-#storm-leads-copy {
-  margin: 25px;
-}
+  /*weather widget and weather alerts section*/
 
-/*weather widget and weather alerts section*/
+  #weather-apps {
+    flex-direction: row;
+    margin: 0 12px 25px 12px;
+  }
+  .weather-apps-section {
+    padding: 0;
+    margin: 20px;
+  }
 
-#weather-apps {
-  flex-direction: row;
-  margin: 0 12px 25px 12px;
-}
-.weather-apps-section {
-  padding: 0;
-  margin:20px;
-}
+  .weather-apps-section h2 {
+    margin-top: 0;
+    margin: 0 20px;
+  }
+  .logo-icon {
+    height: 55px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-.weather-apps-section h2 {
-  margin-top: 0;
-  margin: 0 20px;
-}
-.logo-icon {
-  height: 55px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.border-text{
- border: solid;
+  .border-text {
+    border: solid;
     border-width: 3px;
     border-color: rgb(14, 93, 168);
     height: 100%;
     padding: 20px 10px;
+  }
 
-}
-
-.border-text li{
+  .border-text li {
     padding: 0 10px;
     margin-left: 20px;
-}
+  }
 
-#weather-widget {
-  background-color: transparent;
-}
+  #weather-widget {
+    background-color: transparent;
+  }
 
-/*quote section*/
+  /*quote section*/
 
-form input {
-  margin: 10px;
-  width: 250px;
-  padding: 5px;
-  margin-right: 20px;
-}
+  form input {
+    margin: 10px;
+    width: 250px;
+    padding: 5px;
+    margin-right: 20px;
+  }
 
-.quote-field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  .quote-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-form {
-  flex-direction: row;
-  padding-bottom: 25px;
-}
+  form {
+    flex-direction: row;
+    padding-bottom: 25px;
+  }
 
-.form-icon {
-  width: 35px;
-}
+  .form-icon {
+    width: 35px;
+  }
 }
 /*desktop design*/
 
 @media (min-width: 1400px) {
-      h1 {
+  h1 {
     font-size: 75px;
   }
 
@@ -262,96 +266,102 @@ form {
 
   /*storm leads section*/
 
-.hero {
-  height: 300px;
-  padding-left: 10%;
-}
-#predictive-sales-ai-logo {
-  width: 200px;
-}
-#storm-leads-copy {
-  margin: 25px 10%;
-}
+  .hero {
+    height: 300px;
+    padding-left: 10%;
+  }
+  #predictive-sales-ai-logo {
+    width: 200px;
+  }
+  #storm-leads-copy {
+    margin: 25px 10%;
+  }
 
-/*weather widget and weather alerts section*/
+  /*weather widget and weather alerts section*/
 
-#weather-apps {
-  margin: 25px 10%;
-}
-.weather-apps-section {
-  margin:0;
-}
+  #weather-apps {
+    margin: 25px 10%;
+  }
+  .weather-apps-section {
+    margin: 0;
+  }
 
-#weather-alerts {
-    margin-left:5%;
-}
 
-.weather-apps-section h2 {
-  margin-top: 0;
-}
-.logo-icon {
-  height: 55px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
 
-.border-text{
- border: solid;
+  #weather-widget{
+    padding:0 4% 0 0;
+    width: 95%;
+  }
+
+  .weather-apps-section h2 {
+    margin-top: 0;
+  }
+  .logo-icon {
+    height: 55px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .border-text {
+    border: solid;
     border-width: 3px;
     border-color: rgb(14, 93, 168);
     height: 100%;
     padding: 20px 10px;
+  }
 
-}
-
-.border-text li{
+  .border-text li {
     padding: 0 10px;
     margin-left: 20px;
-}
+  }
 
-#weather-widget {
-  background-color: transparent;
-}
+  #weather-widget {
+    background-color: transparent;
+  }
 
-/*quote section*/
+  /*quote section*/
+  .hidden {
+    display: none;
+  }
 
-#form-section{
-    position:fixed;
-    z-index:1;
-    left: 30%;
-    top: 25%;
-    padding: 5% 6%;
-    box-shadow: 10px 10px 1000px 1000px rgba(0, 0, 0, 0.75);
-}
-
-form input {
-  width: 500px;
-  height: 40px;
-  padding: 5px;
-}
-
-form {
-  flex-direction: column;
-  width: 500px;
-}
-
-#modal-button{
-    display:flex;
+  #modal-button {
+    display: flex;
     flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 25px;
-  display:relative;
+    align-items: center;
+    justify-content: center;
+  }
 
-}
-#modal-button button{
+.btn-primary{
+    padding: 10px 35px;
+    font-size: 30;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    padding: 5px 50px;
-    color:white;
+    border: none;
+    margin-bottom: 25px;
+    border-radius: 25px;
     background-color: rgb(14, 93, 168);
-    border:none;
-    border-radius: 20px;
 }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input {
+    width: 400px;
+  }
+
+  .modal-content {
+    background-color: rgb(14, 93, 168);
+    width: 120%;
+  }
+
+  .close {
+    background-color: white;
+    color: white;
+  }
+
+  .modal-header-section {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
 }

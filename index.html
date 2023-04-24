@@ -17,7 +17,7 @@
     <div class="storm-leads-section">
         <div class="hero">
             <img src="./assets/img/logos/PSAI logo length white.png" alt="Predictive Sales AI logo" id="predictive-sales-ai-logo">
-            <h1>STORM LEADS GO DIGITAL</h1>
+            <h1>Storm Leads Go Digital</h1>
         </div>
         <div id="storm-leads-copy">
             <p style="font-weight: 500;">Ever wonder how you could capture storm leads without canvassing? Now with our new partner Spectrum, you can do just that and more!</p>
@@ -28,52 +28,85 @@
         <div class="weather-apps-section" id="weather-widget">
             <img src="./assets/img/logos/Predictive-Apps-icon.png" alt="Predictive Apps logo" class="logo-icon">
             <div class="border-text">
-            <h2>YOUR PERSONAL WEATHER WIDGET</h2>
-            <ul>
-                <li>In seconds, drop industry-specific chat-like widgets onto your website—without the need for a total design overhaul.</li>
-                <li>Deliver weather event history to homeowners, so they can schedule free roofing inspections instantly and purposefully.</li>
-                <li>10+ years of past weather data</li>
-                <li>Create more meaningful customer engagement with weather and consumer data.</li>
-                <li>Includes exclusive Predictive Sales AI customer portraits to better improve customer experience and closing rates.</li>
-                <li>Standard Pricing – $20 per lead and setup fee</li>
-                <li>OC Program Pricing – U+2013 $15 per lead and free widget installation/setup fee waived</li>
-            </ul>
+                <h2>Your Personal<br>Weather Widget</h2>
+                <ul>
+                    <li>In seconds, drop industry-specific chat-like widgets onto your website—without the need for a total design overhaul.</li>
+                    <li>Deliver weather event history to homeowners, so they can schedule free roofing inspections instantly and purposefully.</li>
+                    <li>10+ years of past weather data</li>
+                    <li>Create more meaningful customer engagement with weather and consumer data.</li>
+                    <li>Includes exclusive Predictive Sales AI customer portraits to better improve customer experience and closing rates.</li>
+                    <li>Standard Pricing – $20 per lead and setup fee</li>
+                    <li>OC Program Pricing – U+2013 $15 per lead and free widget installation/setup fee waived</li>
+                </ul>
             </div>
         </div>
         <div class="weather-apps-section" id="weather-alerts">
             <img src="./assets/img/logos/weather-alerts-icon.png" alt="Predictive Apps logo" class="logo-icon">
             <div class="border-text">
-            <h2>OUR EXTREME<br> WEATHER ALERTS</h2>
-            <ul>
-                <li>In minutes, sign up your entire team for more accurate hail swath and past and present weather data.</li>
-                <li>Educate yourself and your customers on the severity of the weather in the service areas that matter.</li>
-                <li>4x tighter swath tolerance</li>
-                <li>Don’t waste time in the wrong areas, use state of the art weather technology.</li>
-                <li>Data technology created by and between top PhD meteorologists and climatologists as well as home service industry data scientists.</li>
-                <li>Standard Pricing – paid for subscription model</li>
-                <li>OC Program Pricing – FREE swaths and weather alerts</li>
-            </ul>
+                <h2>Our Extreme<br>Weather Alerts</h2>
+                <ul>
+                    <li>In minutes, sign up your entire team for more accurate hail swath and past and present weather data.</li>
+                    <li>Educate yourself and your customers on the severity of the weather in the service areas that matter.</li>
+                    <li>4x tighter swath tolerance</li>
+                    <li>Don’t waste time in the wrong areas, use state of the art weather technology.</li>
+                    <li>Data technology created by and between top PhD meteorologists and climatologists as well as home service industry data scientists.</li>
+                    <li>Standard Pricing – paid for subscription model</li>
+                    <li>OC Program Pricing – FREE swaths and weather alerts</li>
+                </ul>
             </div>
         </div>
     </div>
-    <div id="form-section">
-        <h2>GET A QUOTE</h2>
+    <div class="form-section hidden">
+        <h2>Get a Quote</h2>
         <form>
-            <title>GET A QUOTE</title>
+            <title>Get a Quote</title>
             <div class="quote-field">
-            <i><img src="/assets/img/email-icon.svg" alt="email icon" class="form-icon"></i>
-            <input type="text" id="email" placeholder="Email" required>
+                <i><img src="/assets/img/email-icon.svg" alt="email icon" class="form-icon"></i>
+                <input type="text" id="email" placeholder="Email" required>
             </div>
             <div class="quote-field">
-            <i><img src="/assets/img/phone-icon.png" alt="phone icon" class="form-icon"></i>
-            <input type="text" id="phone" placeholder="Phone">
+                <i><img src="/assets/img/phone-icon.png" alt="phone icon" class="form-icon"></i>
+                <input type="text" id="phone" placeholder="Phone">
             </div>
             <button onclick="SendMail()" type="submit">SUBMIT</button>
         </form>
     </div>
-    <div id="modal-button">
-        <button>Get a Quote</button>
-    </div>
+
+        <!-- Button trigger modal -->
+        <div id="modal-button">
+        <button type="button" class="btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Get a Quote
+        </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header-section">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-section">
+                            <h2>Get a Quote</h2>
+                            <form>
+                                <div class="quote-field">
+                                    <i><img src="/assets/img/email-icon.svg" alt="email icon" class="form-icon"></i>
+                                    <input type="text" id="modal-email" placeholder="Email" required>
+                                </div>
+                                <div class="quote-field">
+                                    <i><img src="/assets/img/phone-icon.png" alt="phone icon" class="form-icon"></i>
+                                    <input type="text" id="modal-phone" placeholder="Phone">
+                                </div>
+                                <button onclick="SendMail()" type="submit">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
