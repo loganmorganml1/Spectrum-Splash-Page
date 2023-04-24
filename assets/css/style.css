@@ -50,7 +50,7 @@ li {
 }
 
 .hero {
-  background-image: url(assets/img/roof-damage.jpg);
+  background-image: url(/assets/img/roof-damage.jpg);
   height: 175px;
   width: 100%;
   background-size: cover;
